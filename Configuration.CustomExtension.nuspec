@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Configuration.CustomExtension</id>
+    <version>1.0.0</version>
+    <authors>Luiz Santana</authors>
+    <owners>Luiz Santana</owners>
+    <licenseUrl></licenseUrl>
+    <projectUrl></projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>IConfiguration custom extension class to get custom values</description>
+    <releaseNotes></releaseNotes>
+    <copyright></copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="Microsoft.Extensions.Configuration" version="5.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\net5.0\Configuration.CustomExtension.dll" target=".\lib\net5.0\Configuration.CustomExtension.dll" />
+    <file src=".\bin\Release\net5.0\Configuration.CustomExtension.xml" target=".\lib\net5.0\Configuration.CustomExtension.xml" />
+  </files>
+</package>
