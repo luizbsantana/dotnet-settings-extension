@@ -5,7 +5,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
     <PackageId>Configuration.CustomExtension</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Luiz Santana</Authors>
     <Description>IConfiguration custom extension class to get custom values</Description>
   </PropertyGroup>
