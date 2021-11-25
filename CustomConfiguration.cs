@@ -6,7 +6,7 @@ namespace Configuration.CustomExtension
     /// <summary>
     /// IConfiguration custom extension class
     /// </summary>
-    public static class ConfigurationCustomExtension
+    public static class CustomConfiguration
     {
         /// <summary>
         /// Get a custom value from appsettings.json file or EnvironmentVariables system from a given <see cref="string"/> object referencing to the custom value KEY
@@ -18,6 +18,16 @@ namespace Configuration.CustomExtension
         {
             return configuration[key] ?? configuration[key.ReverseKey()] ?? 
                 Environment.GetEnvironmentVariable(key) ?? Environment.GetEnvironmentVariable(key.ReverseKey());
+        }
+
+        /// <summary>
+        /// Get a custom value from EnvironmentVariables system from a given <see cref="string"/> object referencing to the custom value KEY
+        /// </summary>
+        /// <param name="key">The KEY of the custom value</param>
+        /// <returns>The custom value string</returns>
+        public static string GetCustomEnvironmentVariable(string key)
+        {
+            return Environment.GetEnvironmentVariable(key) ?? Environment.GetEnvironmentVariable(key.ReverseKey());
         }
 
         private static string ReverseKey(this string key)
